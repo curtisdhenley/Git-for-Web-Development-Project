@@ -69,16 +69,38 @@ https://codepen.io/curtisdhenley/pen/LYLNVow
     30. How do I write a comment in CSS?
     /**/ anything written between the asterisks will be commented out
     31. How do I find out what file I am in, when I am using the command line? 
+    Use command pwd Print Working Directory 
     32. Using the command line - how do I see a list of files/folders in my current folder?
-    33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+    Use command ls List Directory Contents
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    Use command rm<file> Remove<file name>. Yes because if you accidentally select the directory the entire folder will be deleted 
+    34. Why should I use version control?
+    In case you need to recall to a previous version before a change was made that broke the code or made a bug 
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
+    Every 20 minutes or when you finish a feature
+    36. What is the command we would use to push our repo up to github?
+    The initial push command is git push origin -u branch-name 
     37. Walk me through Lambda's git flow. 
+    -Fork your own version of the repo
+    -Ensure you username is in front of repo name
+    -Clone repo using the clone/download button
+    -Using the CLI use cd command until you are in directory where you want to clone your forked repo
+    -Use git clone <paste copied link> to clone a copy in the directory you chose
+    -cd into new repo
+    -Checkout a new branch using git checkout -b branch-name
+    -Work on assignment while regularly adding, commiting, and pushing your changes
+    -In order to push changed use command git add . followed by git commit -m "detailed comment of changes made" followed by git push origin -u branch-name
+    -After initial push, each follow-up push you only have to use git add . followed by git commit -m "detailed comment of changes" followed by git push
+    -Now that there are changes to the remote repo you can create a pull request
+    -Go to your forked repo on github and make sure you are not on original
+    -Triple check the changes are being made to your branch and click new pull request
+    -verify once again that it is your branch receiving changes and click create pull request
+    -Your changes will now be ready for review
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+    An inline element takes up only the space it needs whereas a block element takes up the whole row
     2. What happens when an element is positioned absolutely? 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
